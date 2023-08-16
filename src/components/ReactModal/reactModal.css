@@ -1,0 +1,22 @@
+.reactModal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+}
+
+.reactModal h4 {
+  color: #213547;
+  font-size: 20px;
+}
+
+.reactModal button {
+  background-color: #646cff;
+  color: white;
+  margin-top: 10px;
+  border-radius: 8px;
+  padding: 10px 15px;
+  font-weight: 500;
+  cursor: pointer;
+  border: 1px solid transparent;
+  font-size: 16px;
+}
