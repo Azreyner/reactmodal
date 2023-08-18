@@ -30,13 +30,14 @@ function App() {
   return (
     <div>
       <button onClick={() => setModalIsOpen(true)}>Ouvrir la modale</button>
+      {modalIsOpen &&
       <ReactModal
         contentModal="Contenu de la modale"
         contentButton="Fermer"
         isOpen={modalIsOpen}
         onClose={closeModal}
         backgroundColorButton="#3498db"
-      />
+      />}
     </div>
   );
 }
