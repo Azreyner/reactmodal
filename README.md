@@ -17,8 +17,8 @@ v18.16.0
 ## Utilisation
 
 ```javascript
-import React, { useState } from 'react';
-import ReactModal from '@Azreyner/reactmodal';
+import React, { useState } from "react";
+import ReactModal from "@Azreyner/reactmodal";
 
 function App() {
   const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -30,14 +30,14 @@ function App() {
   return (
     <div>
       <button onClick={() => setModalIsOpen(true)}>Ouvrir la modale</button>
-      {modalIsOpen &&
-      <ReactModal
-        contentModal="Contenu de la modale"
-        contentButton="Fermer"
-        isOpen={modalIsOpen}
-        onClose={closeModal}
-        backgroundColorButton="#3498db"
-      />}
+      {modalIsOpen && (
+        <ReactModal
+          contentModal="Contenu de la modale"
+          contentButton="Fermer"
+          onClose={closeModal}
+          backgroundColorButton="#3498db"
+        />
+      )}
     </div>
   );
 }
